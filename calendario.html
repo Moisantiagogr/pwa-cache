@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='utf-8' />
+    <link rel="stylesheet" href="styles.css">
+    <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.19/index.global.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@6.1.19/index.global.min.js'></script>
+    <link rel="apple-touch-icon" href="/images/icons/apple-icon-180x180.png" sizes="180x180">
+        <link rel="manifest" href="manifest.json">
+        <!-- También es recomendable agregar el theme-color -->
+        <meta name="theme-color" content="#4A90E2">
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth'
+            });
+            calendar.render();
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="calendario.html">Calendario</a></li>
+            <li><a href="formulario.html">Formulario</a></li>
+        </ul>
+    </nav>
+    <div id='calendar'></div>
+</body>
+
+</html>

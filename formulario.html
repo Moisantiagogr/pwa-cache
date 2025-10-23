@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="apple-touch-icon" href="/images/icons/apple-icon-180x180.png" sizes="180x180">
+        <link rel="manifest" href="manifest.json">
+        <!-- También es recomendable agregar el theme-color -->
+        <meta name="theme-color" content="#4A90E2">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="calendario.html">Calendario</a></li>
+            <li><a href="formulario.html">Formulario</a></li>
+        </ul>
+    </nav>
+    
+    <form>
+        <div class="form-col ">
+            <div class="field">
+                <label for="nombre">Nombre:</label>
+                <select id="nombre" class="select2">
+                    <option value="">Seleccione...</option>
+                    <option value="1">Juan</option>
+                    <option value="2">María</option>
+                    <option value="3">Pedro</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label for="ciudad">Ciudad:</label>
+                <select id="ciudad" class="select2">
+                    <option value="">Seleccione...</option>
+                    <option value="1">Madrid</option>
+                    <option value="2">Barcelona</option>
+                    <option value="3">Valencia</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label for="pais">País:</label>
+                <select id="pais" class="select2">
+                    <option value="">Seleccione...</option>
+                    <option value="1">España</option>
+                    <option value="2">México</option>
+                    <option value="3">Argentina</option>
+                </select>
+            </div>
+        </div>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="main.js"></script>
+    <script>
+        $(function() {
+            $('.select2').select2();
+        });
+    </script>
+</body>
+</html>
